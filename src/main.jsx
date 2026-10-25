@@ -31,8 +31,10 @@ function App() {
     <div className="announcement">Handcrafted details. Heartfelt gifting. ✦</div>
     <header className="header">
       <a className="brand" href="#home" aria-label="NB Rituals home">
-        <img src="/images/logo.jpg" alt="NB Rituals logo" />
-        <span><strong>NB RITUALS</strong><small>Handmade with love</small></span>
+<img
+  src={`${import.meta.env.BASE_URL}images/logo.jpg`}
+  alt="NB Rituals logo"
+/>        <span><strong>NB RITUALS</strong><small>Handmade with love</small></span>
       </a>
       <nav><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#contact">Contact</a></nav>
       <a className="header-cta" href={whatsappLink("your collection")} target="_blank" rel="noreferrer">Enquire on WhatsApp ↗</a>
