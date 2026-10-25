@@ -3,15 +3,17 @@ import { createRoot } from "react-dom/client";
 import "./style.css";
 
 const WHATSAPP_NUMBER = "919151613141"; // India country code + the number from your poster
+
 const products = [
-  { name: "Door Torans & Entrance Décor", category: "Torans",image: `${import.meta.env.BASE_URL}images/torans.jpg`, note: "Handmade welcome décor" },
-  { name: "Shubh Labh & Wall Décor", category: "Home Décor", image: `${import.meta.env.BASE_URL}home-decor.jpg", note: "Traditional festive accents" },
-  { name: "Pooja Thali", category: "Pooja", image: `${import.meta.env.BASE_URL}pooja-thali.jpg", note: "For your special rituals" },
-  { name: "Curtain Holders & Tiebacks", category: "Accessories", image: `${import.meta.env.BASE_URL}curtain-holders.jpg", note: "A handcrafted finishing touch" },
-  { name: "Decorative Accessories", category: "Accessories", image: `${import.meta.env.BASE_URL}accessories.jpg", note: "Little details for your home" },
-  { name: "Festive & Seasonal Edits", category: "Festive", image: `${import.meta.env.BASE_URL}festive-edits.jpg", note: "Celebrate every season" },
-  { name: "Gifting & Hampers", category: "Gifting", image: `${import.meta.env.BASE_URL}gifting-hampers.jpg", note: "Thoughtful gifts, made special" },
+  { name: "Door Torans & Entrance Décor", category: "Torans", image: `${import.meta.env.BASE_URL}images/torans.jpg`, note: "Handmade welcome décor" },
+  { name: "Shubh Labh & Wall Décor", category: "Home Décor", image: `${import.meta.env.BASE_URL}images/home-decor.jpg`, note: "Traditional festive accents" },
+  { name: "Pooja Thali", category: "Pooja", image: `${import.meta.env.BASE_URL}images/pooja-thali.jpg`, note: "For your special rituals" },
+  { name: "Curtain Holders & Tiebacks", category: "Accessories", image: `${import.meta.env.BASE_URL}images/curtain-holders.jpg`, note: "A handcrafted finishing touch" },
+  { name: "Decorative Accessories", category: "Accessories", image: `${import.meta.env.BASE_URL}images/accessories.jpg`, note: "Little details for your home" },
+  { name: "Festive & Seasonal Edits", category: "Festive", image: `${import.meta.env.BASE_URL}images/festive-edits.jpg`, note: "Celebrate every season" },
+  { name: "Gifting & Hampers", category: "Gifting", image: `${import.meta.env.BASE_URL}images/gifting-hampers.jpg`, note: "Thoughtful gifts, made special" },
 ];
+
 const categories = ["All", "Torans", "Home Décor", "Pooja", "Accessories", "Festive", "Gifting"];
 
 function whatsappLink(productName) {
